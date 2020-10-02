@@ -1,0 +1,247 @@
+<div class="page-container">
+    <div class="page-header">
+        <span class="page-icon">
+            <img class="title-image" src="../../assets/icons/logo.png">
+        </span>
+        <span class="page-title">
+           SALES DASHBOARD
+        </span>
+    </div>
+
+    <mat-tab-group>
+        <mat-tab label="TODAY">
+            <!-- grid start -->
+
+            <mat-grid-list cols="8" rowHeight="50px" gutterSize="40px">
+                <mat-grid-tile [colspan]="6" [rowspan]="1" class="mat-tab-header">
+                    <p style="margin: 15px 0px 20px 20px">All Sales Reps <img src="../../assets/icons/ico-down-arrow.png">
+                    </p>
+                </mat-grid-tile>
+                <mat-grid-tile [colspan]="2" [rowspan]="11">
+                    <mat-tab-group mat-align-tabs="start" mat-stretch-tabs>
+                        <mat-tab label="TOP">
+                            <div class="tab-content-container">
+                                <mat-grid-list class="tab-content-list" cols="1" rowHeight="45px" gutterSize="40px">
+                                    <mat-grid-tile colspan="1" rowspan="3">
+                                        <mat-card style="background-color: #1976D2; ">
+                                            <mat-card-title>John Doe</mat-card-title>
+                                            <mat-card-content>
+                                                <mat-list role="list">
+                                                    <mat-list-item role="listitem">New MRR
+                                                        <span class="list-item-value">5230</span>
+                                                    </mat-list-item>
+                                                    <mat-list-item role="listitem">New Logos
+                                                        <span class="list-item-value">102</span>
+                                                    </mat-list-item>
+                                                    <mat-list-item role="listitem">Demo Calls
+                                                        <span class="list-item-value">30</span>
+                                                    </mat-list-item>
+                                                </mat-list>
+                                            </mat-card-content>
+
+                                        </mat-card>
+                                    </mat-grid-tile>
+                                    <mat-grid-tile colspan="1" rowspan="3">
+                                        <mat-card style="background-color: #2196F3; ">
+                                            <mat-card-title>Jane Smith</mat-card-title>
+
+                                            <mat-card-content>
+                                                <mat-list role="list">
+                                                    <mat-list-item role="listitem">New MRR
+                                                        <span class="list-item-value">4586</span>
+                                                    </mat-list-item>
+                                                    <mat-list-item role="listitem">New Logos
+                                                        <span class="list-item-value">95</span>
+                                                    </mat-list-item>
+                                                    <mat-list-item role="listitem">Demo Calls
+                                                        <span class="list-item-value">23</span>
+                                                    </mat-list-item>
+                                                </mat-list>
+                                            </mat-card-content>
+                                        </mat-card>
+                                    </mat-grid-tile>
+                                    <mat-grid-tile colspan="1" rowspan="3">
+                                        <mat-card style="background-color: #84B5F6;">
+                                            <mat-card-title>Ethan Hunt</mat-card-title>
+
+                                            <mat-card-content>
+                                                <mat-list role="list">
+                                                    <mat-list-item role="listitem">New MRR
+                                                        <span class="list-item-value">3500</span>
+                                                    </mat-list-item>
+                                                    <mat-list-item role="listitem">New Logos
+                                                        <span class="list-item-value">82</span>
+                                                    </mat-list-item>
+                                                    <mat-list-item role="listitem">Demo Calls
+                                                        <span class="list-item-value">10</span>
+                                                    </mat-list-item>
+                                                </mat-list>
+                                            </mat-card-content>
+
+                                        </mat-card>
+                                    </mat-grid-tile>
+                                </mat-grid-list>
+                            </div>
+
+                        </mat-tab>
+                        <mat-tab label="BOTTOM">BOTTOM</mat-tab>
+                    </mat-tab-group>
+
+                </mat-grid-tile>
+                <mat-grid-tile [colspan]="4" [rowspan]="10">
+                    <div class="funnel-image-container">
+
+                        <mat-list class="funnel-list" role="list">
+                            <mat-list-item role="listitem">
+                                <span matLine> Lead In</span>
+                                <span matLine class="list-item-value">25</span>
+                            </mat-list-item>
+                            <mat-list-item role="listitem">
+                                <span matLine>Contact Made</span>
+                                <span matLine class="list-item-value">18</span>
+                            </mat-list-item>
+                            <mat-list-item role="listitem">
+                                <span matLine>Needs Defined</span>
+                                <span matLine class="list-item-value">12</span>
+                            </mat-list-item>
+                            <mat-list-item role="listitem">
+                                <span matLine>Proposal Made</span>
+                                <span matLine class="list-item-value">8</span>
+                            </mat-list-item>
+                            <mat-list-item role="listitem">
+                                <span matLine>Negotiations Started</span>
+                                <span matLine class="list-item-value">5</span>
+                            </mat-list-item>
+                            <mat-list-item role="listitem">
+                                <span matLine class="list-item-value">Won</span>
+                                <span matLine class="list-item-value">3</span>
+                            </mat-list-item>
+                        </mat-list>
+
+                    </div>
+                    <!-- <img mat-card-image src="../../assets/icons/funnel.png"> -->
+                </mat-grid-tile>
+                <mat-grid-tile [colspan]="2" [rowspan]="10">
+                    <mat-grid-list cols="1" rowHeight="50px" gutterSize="40px" style="margin-top: 0px;">
+                        <mat-grid-tile colspan="1" rowspan="3">
+                            <mat-card class="funnel-detail-card">
+                                <img class="funnel-detail-card-icon" src="../../assets/icons/ico-calls.png">
+                                <div class="funnel-detail-card-text">
+                                    <p class="card-text-title">
+                                        Calls
+                                    </p>
+                                    <p class="card-text-value">
+                                        10/15
+                                    </p>
+                                </div>
+                            </mat-card>
+                        </mat-grid-tile>
+                        <mat-grid-tile colspan="1" rowspan="3">
+                            <mat-card class="funnel-detail-card">
+                                <img class="funnel-detail-card-icon" src="../../assets/icons/ico-wins.png">
+                                <div class="funnel-detail-card-text">
+                                    <p class="card-text-title">
+                                        Wins
+                                    </p>
+                                    <p class="card-text-value">
+                                        1/3
+                                    </p>
+                                </div>
+                            </mat-card>
+                        </mat-grid-tile>
+                        <mat-grid-tile colspan="1" rowspan="3">
+                            <mat-card class="funnel-detail-card">
+                                <img class="funnel-detail-card-icon" src="../../assets/icons/ico-revenue.png"> '
+                                <div class="funnel-detail-card-text">
+                                    <p class="card-text-title">
+                                        Incremented revenue
+                                    </p>
+                                    <p class="card-text-value">
+                                        80k/100k
+                                    </p>
+                                </div>
+                            </mat-card>
+                        </mat-grid-tile>
+                    </mat-grid-list>
+                </mat-grid-tile>
+                <mat-grid-tile [colspan]="8" [rowspan]="10">
+                    <div class="table-heading">
+                        <p>Details</p>
+                    </div>
+                    <div>
+                        <mat-table #table [dataSource]="dataSource">
+
+                            <!--- Note that these columns can be defined in any order.
+                                The actual rendered columns are set as a property on the row definition" -->
+                            <!-- ['Sales Rep', 'Date', 'Client', 'Primary Contact Person', 'Title', 'Vertical', 'Meeting Location',
+'Purpose of Interaction', 'Outcome and Remarks', 'Engagement Status'] -->
+                            <ng-container matColumnDef="salesRep">
+                                <mat-header-cell *matHeaderCellDef> Sales Rep </mat-header-cell>
+                                <mat-cell *matCellDef="let element"> {{element.salesRep}}</mat-cell>
+                            </ng-container>
+
+                            <ng-container matColumnDef="date">
+                                <mat-header-cell *matHeaderCellDef> Date </mat-header-cell>
+                                <mat-cell *matCellDef="let element"> {{element.date}} </mat-cell>
+                            </ng-container>
+
+                            <ng-container matColumnDef="client">
+                                <mat-header-cell *matHeaderCellDef> Client </mat-header-cell>
+                                <mat-cell *matCellDef="let element"> {{element.client}}</mat-cell>
+                            </ng-container>
+
+                            <ng-container matColumnDef="primaryContact">
+                                <mat-header-cell *matHeaderCellDef> Primary Contact Person </mat-header-cell>
+                                <mat-cell *matCellDef="let element">{{element.primaryContact}}</mat-cell>
+                            </ng-container>
+
+                            <ng-container matColumnDef="title">
+                                <mat-header-cell *matHeaderCellDef> Title </mat-header-cell>
+                                <mat-cell *matCellDef="let element">{{element.title}}</mat-cell>
+                            </ng-container>
+
+                            <ng-container matColumnDef="vertical">
+                                <mat-header-cell *matHeaderCellDef> Vertical </mat-header-cell>
+                                <mat-cell *matCellDef="let element">{{element.vertical}}</mat-cell>
+                            </ng-container>
+
+                            <ng-container matColumnDef="location">
+                                <mat-header-cell *matHeaderCellDef> Meeting Location </mat-header-cell>
+                                <mat-cell *matCellDef="let element">{{element.location}}</mat-cell>
+                            </ng-container>
+
+                            <ng-container matColumnDef="purpose">
+                                <mat-header-cell *matHeaderCellDef> Purpose of Interaction </mat-header-cell>
+                                <mat-cell *matCellDef="let element">{{element.purpose}}</mat-cell>
+                            </ng-container>
+
+                            <ng-container matColumnDef="remarks">
+                                <mat-header-cell *matHeaderCellDef> Outcome and Remarks </mat-header-cell>
+                                <mat-cell *matCellDef="let element">{{element.remarks}}</mat-cell>
+                            </ng-container>
+
+                            <ng-container matColumnDef="status">
+                                <mat-header-cell *matHeaderCellDef> Engagement Status </mat-header-cell>
+                                <mat-cell *matCellDef="let element"> {{element.status}}
+                                </mat-cell>
+
+                            </ng-container>
+
+                            <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+                            <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+                        </mat-table>
+                    </div>
+                </mat-grid-tile>
+
+            </mat-grid-list>
+
+        </mat-tab>
+        <mat-tab label="LAST WEEK">LAST WEEK test</mat-tab>
+        <mat-tab label="LAST MONTH">LAST MONTH test</mat-tab>
+        <mat-tab label="THIS QUARTER"></mat-tab>
+        <mat-tab label="THIS YEAR"></mat-tab>
+
+    </mat-tab-group>
+
+
+</div>

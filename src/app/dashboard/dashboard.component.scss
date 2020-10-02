@@ -1,0 +1,201 @@
+.page-container {
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+.mat-grid-list {
+    margin-top: 20px;
+}
+
+.mat-grid-tile {
+    background-color: #EFF3F6;
+}
+
+.mat-figure {
+    display: inline-block !important;
+    align-items: flex-start !important;
+}
+
+.page-header {
+    height: 130px;
+}
+
+.page-icon {
+    float: left;
+    padding-top: 27px;
+}
+
+.page-title {
+    font-family: Roboto;
+    font-size: 48px;
+    color: #231f20;
+    font-weight: 100;
+    float: right;
+    vertical-align: bottom;
+    padding-top: 65px;
+}
+
+.mat-tab-header {
+    background-color: #ffffff;
+    max-height: 50px;
+}
+
+.mat-tab-body-content {
+    height: 100%;
+    overflow: hidden;
+}
+
+.mat-tab-label {
+    height: 50px !important;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 500;
+    color: #2c3e50;
+    .mat-tab-label-content {
+        opacity: 0.5;
+    }
+}
+
+.mat-tab-label-active {
+    color: #2196F3;
+    .mat-tab-label-content {
+        opacity: 1;
+    }
+}
+
+.mat-tab-group.mat-primary .mat-ink-bar,
+.mat-tab-nav-bar.mat-primary .mat-ink-bar {
+    background-color: #2196F3;
+}
+
+.detail-card {
+    height: 100%;
+    width: 100%;
+    background: url('../../assets/icons/winner.png') center bottom no-repeat;
+    background-size: auto;
+}
+
+.funnel-detail-card {
+    height: 100%;
+    width: 100%;
+    padding: 0px !important;
+    position: relative;
+}
+
+.funnel-detail-card-icon {
+    padding: 30px 0px 0px 30px;
+}
+
+.funnel-detail-card-text {
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    text-align: right;
+    padding-bottom: 30px;
+    padding-right: 30px;
+}
+
+//TOP TAB CARDS
+.tab-content-container {
+    position: relative;
+    .mat-grid-list {
+        margin-top: 40px;
+        .mat-card {
+            .mat-card-title {
+                color: #ffffff;
+                font-size: 24px;
+                text-align: center;
+            }
+            .mat-list {
+                .mat-list-item {
+                    color: #ffffff;
+                    font-size: 18px;
+                    text-align: center;
+                    .list-item-value {
+                        font-size: 48px;
+                        font-weight: bold;
+                        position: absolute;
+                        text-align: right;
+                        top: 15px;
+                        right: 50px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.card-text-title {
+    font-size: 18px;
+    font-family: 'Roboto';
+    font-weight: 200;
+    color: #2c3e50;
+}
+
+.card-text-value {
+    display: block;
+    font-size: 48px;
+    font-family: 'Roboto';
+    font-weight: 500;
+    color: #2196f3;
+}
+
+// Table css
+.table-heading {
+    background-color: #ffffff;
+    padding: 24px 0px 0px 24px;
+    color: #231f20;
+    height: 50px;
+    font-size: 24px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.mat-header-cell {
+    font-size: 12px;
+    font-weight: bold;
+    font-family: Roboto;
+    color: #231f20;
+}
+
+.mat-row:nth-child(even) {
+    background-color: #f8f9fb;
+}
+
+.mat-row:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+.mat-row {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-weight: normal;
+    color: #231f20;
+    border-color: #e4e8ec;
+}
+
+// FUNNEL LIST CSS
+.funnel-image-container {
+    height: 100%;
+    background: url('../../assets/icons/funnel.png') left top no-repeat;
+    background-size: contain;
+    position: relative;
+    .funnel-list,
+    .mat-list {
+        position: absolute;
+        left: 35%;
+        .mat-list-item {
+            color: #ffffff;
+            font-size: 18px;
+            font-weight: normal;
+            line-height: normal;
+            margin: 25% 0px 0px 0px;
+            text-align: center;
+            .list-item-value {
+                font-weight: bold;
+                font-size: 48px;
+            }
+        }
+    }
+}
