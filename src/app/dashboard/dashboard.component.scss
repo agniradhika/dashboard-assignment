@@ -197,5 +197,8 @@
                 font-size: 48px;
             }
         }
+        .mat-list-item:first-child {
+            margin: 0%;
+        }
     }
 }
